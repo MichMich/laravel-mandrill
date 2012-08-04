@@ -1,4 +1,4 @@
-# Mailchimp for LaravelPHP #
+# Mandrill for LaravelPHP #
 
 This package is a simple wrapper for working w/ the [Mandrill API](http://mandrillapp.com/api/docs/).
 The code of the application is based on Scott Travis' [Mailchimp Bunle](https://github.com/swt83/laravel-mailchimp).
