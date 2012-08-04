@@ -18,7 +18,7 @@ Copy the sample config file to ``application/config/mandrill.php`` and input the
 Call the desired method and pass the params as a single array.  Don't worry about passing the API key.
 
 ```php
-$response = Mandrill::request('/messages/send', array(
+$response = Mandrill::request('messages/send', array(
 	'message' => array(
 		'html' => 'Body of the message.',
 		'subject' => 'Subject of the message.',
