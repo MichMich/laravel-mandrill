@@ -17,7 +17,7 @@ class Mandrill
 	{
 
 		// load api key
-		$api_key = Config::get('mandrill.api_key');
+		$api_key = Config::get('mandrill::mandrill.api_key');
 		
 		// determine endpoint
 		$endpoint = 'https://mandrillapp.com/api/1.0/'.$method.'.json';
@@ -33,6 +33,7 @@ class Mandrill
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
 		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($arguments));
 		$response = curl_exec($ch);
 
