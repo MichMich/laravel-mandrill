@@ -11,7 +11,7 @@ In ``application/bundles.php`` add:
 'mandrill' => array('auto' => true),
 ```
 
-Copy the sample config file to ``application/config/mandrill.php`` and input the proper information.
+Edit the sample config file in ``bundels/mandril/config/mandrill.php`` and input the proper information.
 
 ## Usage ##
 
